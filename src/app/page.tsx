@@ -1,3 +1,11 @@
+import { Input } from "./components/input";
+
 export default function Home() {
-  return <h1>Hello World</h1>;
+  return (
+    <div>
+      <h1>Password Component</h1>
+
+      <Input />
+    </div>
+  );
 }
