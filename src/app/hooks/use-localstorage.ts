@@ -1,13 +1,17 @@
-import { useState } from "react";
+"use client";
 
-type RequirementPayload = [{ name: string; regex: RegExp }];
+import { useState, useEffect } from "react";
+
+type RequirementPayload = [{ name: string; regex: RegExp }] | [];
 
 export function useLocalStorage() {
-  const [requirementValue = []] = useState<RequirementPayload>(() => {
+  const [requirementValue, setRequirementValue] =useState<RequirementPayload>([]);
+
+  useEffect(() => {
     const item = localStorage.getItem("requirements");
 
-    if (item) return JSON.parse(item);
-  });
+    if (item) setRequirementValue(JSON.parse(item));
+  }, []);
 
   const storeData = (name: string, regex: string) => {
     const data = [...requirementValue, { name, regex: regex.toString() }];
