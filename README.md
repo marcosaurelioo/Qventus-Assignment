@@ -10,7 +10,7 @@
 ### Local execution
 
 ```
-1 - Clone the repositrory
+1 - Clone the repository
 2 - Run npm install
 3 - Run npm run dev
 4 - Run npm test (If you want to perform unit tests)
@@ -27,6 +27,12 @@
 ### Applied concepts
 
 - [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+
+### How to test
+
+- At the main page it's all the default passwords requirements.
+- Insert "/example-2" directly in the URL you will see a custom requirements setup.
+- Insert "/example-3" directly in the URL you will see a way to you insert you own requirements.
 
 ### Project Structure
 
