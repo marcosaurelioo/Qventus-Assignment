@@ -1,3 +1,5 @@
+"use client";
+
 import { Input } from "./components/input";
 
 export default function Home() {
@@ -5,7 +7,14 @@ export default function Home() {
     <div>
       <h1>Password Component</h1>
 
-      <Input />
+      <Input
+        requirements={[
+          "consecutiveLetters",
+          "uppercaseLetter",
+          "specialChar",
+          "hasNumber",
+        ]}
+      />
     </div>
   );
 }
