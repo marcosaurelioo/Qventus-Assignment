@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-type defaultRequirements =
+export type DefaultRequirements =
   | "consecutiveLetters"
   | "specialChar"
   | "uppercaseLetter"
@@ -11,7 +11,7 @@ type defaultRequirements =
 
 interface InputProps {
   manualRequirement?: [{ name: string; regex: RegExp }] | [];
-  requirements?: defaultRequirements[] | [];
+  requirements?: DefaultRequirements[] | [];
 }
 
 const defaultPasswordRequirements = {
@@ -35,7 +35,7 @@ export function Input({ manualRequirement = [], requirements = [] }: InputProps)
 
       <div className="flex flex-col gap-3">
         {validations.map((item, index) => {
-          const isRequirementValidated = item.regex.test(password);
+          const isRequirementValidated = new RegExp(item.regex).test(password);
 
           return (
             <div className="flex gap-3 items-center" key={index}>
