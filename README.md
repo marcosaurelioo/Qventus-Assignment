@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Qventus
 
-## Getting Started
+[Qventus](https://qventus.com) Frontend assingment. 
 
-First, run the development server:
+### Enviroments
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Access the project deployed [here](https://qventus.aurelian.dev).
+- Access the project document [here](https://docs.google.com/document/d/1IKiW6vvaysuuOaWWpId9E9PDSOIJcAD6S22YVUffg7U/edit#heading=h.xqk2mw6uywkn).
+
+### Local execution
+
+```
+1 - Clone the repositrory
+2 - Run npm install
+3 - Run npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tools used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://vercel.com/home)
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind](https://tailwindcss.com)
+- [React Test Library](https://testing-library.com)
+- [Jest](https://jestjs.io/pt-BR)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Applied concepts
 
-## Learn More
+- [Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
-To learn more about Next.js, take a look at the following resources:
+### Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+app
+│   
+├── src
+│     ├──── public
+│     │     └── check-icon.svg
+│     │     └── qventus-logo.png
+│     │     └── options-icon.tsx
+│     │     └── wrong-icon.svg
+│     │            
+│     ├──── app
+|     |      └── components
+|     |      |   └── input.spec.tsx
+|     |      |   └── input.tsx
+|     |      |
+|     |      └── example-2
+|     |      |   └── page.tsx
+|     |      |
+|     |      └── example-3
+|     |      |   └── page.tsx
+|     |      |
+|            └── hooks
+|                └── use-localstorage.ts
+|
+|         
+|              
+|
+| { ..configs }          
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+<img src="https://qventus.com/wp-content/themes/gc-responsive/images/logo-qventus.svg" alt="logo" width="300" height="200">
